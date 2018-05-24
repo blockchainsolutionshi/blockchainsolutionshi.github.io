@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<title> BSH &mdash; Blockchain Solutions Hawai&#8216;i </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("http://architectureimg.com/wp-content/uploads/2016/08/skyscrapers-waikiki-sunset-blue-hawaii-skyscrapers-sky-water-nature-architecture-beaches-beautiful-clouds-honolulu-sea-photo-gallery.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+.logo {
+    max-width: 100%
+    max-height: 100%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">  
+    <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-group"></i> TEAM</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    &emsp;<img src="images/BSH_Logo_Color.png" class="w3-bar-item" style="height:400px">
+    <!--<span class="w3-jumbo w3-hide-small">Blockchain Solutions Hawaii</span><br>-->
+    <!--<span class="w3-xxlarge w3-hide-large w3-hide-medium">Blockchain Solutions Hawaii</span><br> -->
+    <br>
+    &emsp;<span class="w3-xxlarge">Hawai&#8216;i's Blockchain Help Desk</span>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-btc w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">What is Bitcoin and Blockchain?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-list w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Services</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Programming the Blockchain</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-group w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Who are we?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div> -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <div class="w3-half" style="margin-top:64px">
+    <h1 class="w3-center">What is Bitcoin and Blockchain?</h1>
+    <p>Bitcoin is the first decentralized peer-to-peer digital currency. This means there is no central authority (Bank, Visa, or PayPal) that controls the creation, transfer, and storage of your Bitcoin. A blockchain is a public ledger held by every participant in the Bitcoin network. Bitcoin transactions are packaged into blocks that are added to the ledger every 10 minutes. 
+
+
+The entire state of the network at some time (a block), the block is validated by all participants and is added to a chain of older blocks recording how the entire network has evolved since its inception. 
+
+
+A blockchain is secured against attack through a process called “mining,” where participants dedicate computing power to compete to find the new blocks. The mining process incentivizes all actors to compete honestly by producing new “coins” for a miner when they produce a valid block. If a malicious actor tries to cheat, the block is rejected by every other participant and no reward is granted, because they are competing for the same reward. Thus, a blockchain is only as secure as the number of participants, and Bitcoin has by far the most participants competing to produce a new block on the chain. With Bitcoin, a new block is found every ~10min and produces 12.5 Bitcoin. Bitcoin is the most secure blockchain, since its inception in 2009 Bitcoin has never been compromised and has never been shut down, despite constant attacks. There are now many blockchains and many “coins” that perform different functions and we would love to help make the blockchain work for you or your business.
+    </p>
+  </div>
+  <div class="w3-half" style="margin-top:64px">
+  <center><img src="images/blockchain.png" style="width:100%"></center>
+  </div>
+</div>
+
+<div class="w3-container" style="padding:128px 16px; background-color:#3333ff;">
+  <div class="w3-half" style="margin-top:64px">
+    <h1 class="w3-center" style='color:white'>Programming the Blockchain</h1>
+    <p style='color:white'>
+    Bitcoin and other blockchains are digital in nature, meaning that every aspect is programmable.</p>
+    <ul style='color:white'>
+    <li>Digital assets like Bitcoin, Litecoin, and Ether incorporate coded instructions into the asset's digital DNA. Assets can even trigger external actions like unlocking a Biki bike, opening a locker, or starting a coin operated laundry machine.</li>
+    <li>Wallets can be programmed to provide hierarchical access that conforms to your business structure, can be configured to required multiple parties to confirm a transaction, and as a bonus, accounting is natively incorporated.</li>
+    <li>Smart contracts are self-executing contracts that live on the blockchain, with the terms of the agreement between buyer and seller directly written into lines of open-source code. This provides functionality that once required an accountant or lawyer &mdash; such as escrow services &mdash; to be executed autonomously.</li>
+    <li>You can create your own coin for use as loyalty points or redeemable tokens for a service.</li>
+    </ul>
+    <p style='color:white'>We can provide these services and more with on-island in-person consultation service as Hawai&#8216;i’s blockchain help desk.</p>
+  </div>
+
+  <div class="w3-half" style="margin-top:64px">
+    <h1 class="w3-center" style='color:white'>Services</h1>
+      <center>
+      <ul style="color:white; width:50%" class="w3-large w3-ul">
+      <li>Consulting</li>
+      <li>Education</li>
+      <li>Business Integration</li>
+      <li>Software &amp; Web Development</li>
+      <li>Smart Contract Development</li>
+      <li>Mining Services</li>
+      </ul>
+      <center>
+  </div>
+</div>
+
+<div class="w3-container" style="padding:128px 16px">
+  <div class="w3-half" style="margin-top:64px">
+  <center><img src="images/BSH_Logo_Color.png" style="width:50%"></center>
+  </div>
+  <div class="w3-half" style="margin-top:64px">
+    <h1 class="w3-center">Our Mission</h1>
+    <p>Navigating the waters of the blockchain space to see how it can work for your business is a daunting endeavor. Research requires time, and sorting through the deluge of information/misinformation on the web is challenging for any entrant into the space. This is why we started Blockchain Solutions Hawai&#8216;i, we want to put a face on Bitcoin and the blockchain and provide in-person information and consulting. As graduate students in the natural sciences we would often talk about Bitcoin and the blockchain with our friends and family, we noticed that everyone had heard about Bitcoin but nobody understood how it worked and the implications for the future. We strive to be Hawai&#8216;i’s blockchain help desk, and want to help you understand how Bitcoin and the blockchain can work for you and your business.</p>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
+  <h2 class="w3-center">OUR TEAM</h2>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 w3-hide-small w3-hide-medium w3-margin-bottom">
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/nate.jpg" alt="Nate" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Nate Harmon</h3>
+          <p class="w3-opacity">Founder &amp; Blockchain Engineer</p>
+          <p>A University of Hawai&#8216;i Manoa Geochemistry graduate, in 2011 Nate and his wife moved to Hawai&#8216;i to work as a SCUBA instructor and for the Boys and Girls Club, respectively. After seeing the environmental damage being done, both enrolled in environmental science graduate programs. Nate’s graduate research focused on autonomous instrument development/deployment and chemical engineering for real time environmental monitoring, and included software/hardware development, distributed computing, database management/manipulation, and network communication. During his time at UHM Nate was active in numerous student organizations developing solutions that utilize public blockchains to cater to their needs including: voting platforms, ID systems, token distribution, and donation/payment frameworks. Nate is proficient with Script (Bitcoin), Solidity, Go, Python, C++, CSS, HTML, R, Truffle, among others. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/conor.jpg" alt="Conor" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Conor McPartland</h3>
+          <p class="w3-opacity">Web &amp; Software Engineer</p>
+          <p>Conor is a PhD candidate in Astronomy at University of Hawaii who's research involves using supercomputers to analyze images of hundreds of thousands of galaxies taken by the PanSTARRS-1 telescope on the summit of Haleakal&#257;.
+data modeling and image analysis using python, fortran, and C
+Database management SQL
+web site and app development with HTML/CSS, JavaScript, PHP, and nodeJS
+distributed computing 
+AI and machine learning</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/sam.jpg" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Sam Durham</h3>
+          <p class="w3-opacity">Marketing &amp; Communications</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Wesley Wills</h3>
+          <p class="w3-opacity">Security</p>
+          <p>Backend development at Google.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Andy Hu</h3>
+          <p class="w3-opacity">Chief Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Name</h3>
+          <p class="w3-opacity">Position</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics"
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+ -->
+<!-- Work Section 
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+-->
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:128px 16px" id="contact">
+  <h1 class="w3-center">CONTACT</h1>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <center><img src="images/BSH_Logo_Color.png" style="width:50%"></center>
+    </div>
+    <div class="w3-half">
+      <h3 class="w3-center"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: blockchainsolutionshi@gmail.com</h3>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
